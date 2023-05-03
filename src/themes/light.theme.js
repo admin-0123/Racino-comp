@@ -16,18 +16,36 @@ export const lightTheme = createTheme({
   },
   components: {
     MuiButton: {
-      styleOverrides: {
-        contained: {
-          backgroundColor: ({ palette }) => palette.primary.main,
-          '&:hover': {
-            backgroundColor: '#df487f'
-          },
-          '&:disabled': {
-            color: '#b2b3b9',
-            backgroundColor: '#9a295a'
+      variants: [
+        {
+          props: {color: 'primary',variant: 'contained'},
+          style: {
+            '&:hover': {
+              backgroundColor: '#df487f'
+            },
+            '&:disabled': {
+              color: '#b2b3b9',
+              backgroundColor: '#9a295a'
+            }
+          }
+        },
+        {
+          props: {color: 'primary',variant: 'outlined'},
+          style: {
+            color: 'white',
+            backgroundColor: '#4e5561',
+            '&:hover': {
+              border: '2px solid #a9577a',
+              backgroundColor: '#626873'
+            },
+            '&:disabled': {
+              color: '#b2b3b9',
+              border: '2px solid #763a5a',
+              backgroundColor: '#474d5a'
+            }
           }
         }
-      }
+      ]
     }
   }
 });
