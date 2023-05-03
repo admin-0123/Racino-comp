@@ -44,6 +44,18 @@ export const lightTheme = createTheme({
               backgroundColor: '#474d5a'
             }
           }
+        },
+        {
+          props: {color: 'primary',variant: 'text'},
+          style: {
+            '&:hover': {
+              color: '#d4477c',
+              backgroundColor: '#ffffff00',
+            },
+            '&:disabled': {
+              color: '#942a59'
+            }
+          }
         }
       ]
     }
