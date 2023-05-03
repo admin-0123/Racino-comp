@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 
 // Only include variant, size, color from MuiButtonProps
-type ButtonBaseProps = Pick<MuiButtonProps, "variant" | "size" | "color">;
+type ButtonBaseProps = Pick<MuiButtonProps, "variant" | "size" | "color" | "disabled">;
 
 // Include everything from MuiButtonProps except disableRipple
 // type ButtonBaseProps = Omit<MuiButtonProps, "disableRipple">;
@@ -22,4 +22,5 @@ Button.defaultProps = {
   variant: "contained",
   size: "medium",
   color: "primary",
+  disabled: false,
 };
