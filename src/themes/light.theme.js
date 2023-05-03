@@ -64,8 +64,8 @@ export const lightTheme = createTheme({
               backgroundColor: '#ffffff'
             },
             '&:disabled': {
-              color: '#b2b3b9',
-              backgroundColor: '#9a295a'
+              color: '#000000',
+              backgroundColor: '#999ca5'
             }
           }
         },
@@ -96,7 +96,19 @@ export const lightTheme = createTheme({
               color: '#942a59'
             }
           }
-        }
+        },
+        {
+          props: {color: 'success',variant: 'contained'},
+          style: {
+            '&:hover': {
+              backgroundColor: '#4fc5ba'
+            },
+            '&:disabled': {
+              color: '#97a8ae',
+              backgroundColor: '#2e7e7c'
+            }
+          }
+        },
       ]
     }
   }
