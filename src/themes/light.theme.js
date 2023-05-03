@@ -14,4 +14,20 @@ export const lightTheme = createTheme({
       main: '#26a69a'
     }
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        contained: {
+          backgroundColor: ({ palette }) => palette.primary.main,
+          '&:hover': {
+            backgroundColor: '#df487f'
+          },
+          '&:disabled': {
+            color: '#b2b3b9',
+            backgroundColor: '#9a295a'
+          }
+        }
+      }
+    }
+  }
 });
