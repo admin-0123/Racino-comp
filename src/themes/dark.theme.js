@@ -5,10 +5,13 @@ export const darkTheme = createTheme({
     palette: {
       mode: 'dark',
       primary: {
-        main: pink["A200"],
+        main: '#d81c60',
       },
       secondary: {
-        main: cyan["A400"],
+        main: '#d8d9dc',
+      },
+      success: {
+        main: '#26a69a'
       },
       background: {
         default: blueGrey['800'],
