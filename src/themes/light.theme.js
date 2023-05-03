@@ -56,6 +56,46 @@ export const lightTheme = createTheme({
               color: '#942a59'
             }
           }
+        },
+        {
+          props: {color: 'secondary',variant: 'contained'},
+          style: {
+            '&:hover': {
+              backgroundColor: '#ffffff'
+            },
+            '&:disabled': {
+              color: '#b2b3b9',
+              backgroundColor: '#9a295a'
+            }
+          }
+        },
+        {
+          props: {color: 'secondary',variant: 'outlined'},
+          style: {
+            color: 'white',
+            backgroundColor: '#4e5561',
+            '&:hover': {
+              border: '2px solid #a3a6ac',
+              backgroundColor: '#626873'
+            },
+            '&:disabled': {
+              color: '#b2b3b9',
+              border: '2px solid #636974',
+              backgroundColor: '#474d5a'
+            }
+          }
+        },
+        {
+          props: {color: 'secondary',variant: 'text'},
+          style: {
+            '&:hover': {
+              color: '#ffffff',
+              backgroundColor: '#ffffff00',
+            },
+            '&:disabled': {
+              color: '#942a59'
+            }
+          }
         }
       ]
     }
